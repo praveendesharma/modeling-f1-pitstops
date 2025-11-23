@@ -1,0 +1,12 @@
+# FastF1 cache
+cache/
+*.sqlite
+*.ff1pkl
+
+# Python junk
+__pycache__/
+*.pyc
+*.pyo
+
+# VS Code
+.vscode/
