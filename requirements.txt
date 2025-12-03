@@ -1,0 +1,9 @@
+pandas
+pgmpy
+fastf1
+matplotlib
+seaborn
+hmmlearn
+numpy
+scikit-learn
+tqdm
