@@ -7,7 +7,7 @@ from matplotlib.patches import Patch
 from matplotlib.lines import Line2D
 
 # --- 1. LOAD DATA ---
-filename = '2023_races.csv'
+filename = 'laps_continuous_2023.csv'
 df = pd.read_csv(filename)
 df = df.sort_values(['Year', 'GrandPrix', 'Driver', 'LapNumber']).reset_index(drop=True)
 
@@ -166,7 +166,7 @@ legend_elements = [
 fig1.legend(handles=legend_elements, loc='upper right', fontsize=10)
 fig1.suptitle(f'Tyre Age - {viz_year} {viz_gp} GP (All Drivers)', fontsize=14, fontweight='bold')
 plt.tight_layout(rect=[0, 0, 1, 0.96])
-plt.savefig('gaussian_hmm_tyre_age_grid.png', dpi=150)
+plt.savefig('bahrain_2023_gaussian_hmm_tyre_age.png', dpi=150)
 plt.show()
 
 # ============== FIGURE 2: LAP DELTA GRID ==============
@@ -218,9 +218,9 @@ legend_elements2 = [
 fig2.legend(handles=legend_elements2, loc='upper right', fontsize=10)
 fig2.suptitle(f'Lap Delta - {viz_year} {viz_gp} GP (All Drivers)', fontsize=14, fontweight='bold')
 plt.tight_layout(rect=[0, 0, 1, 0.96])
-plt.savefig('gaussian_hmm_lap_delta_grid.png', dpi=150)
+plt.savefig('bahrain_2023_gaussian_hmm_lap_delta.png', dpi=150)
 plt.show()
 
 print("\nVisualizations saved:")
-print("  - gaussian_hmm_tyre_age_grid.png")
-print("  - gaussian_hmm_lap_delta_grid.png")
+print("  - bahrain_2023_gaussian_hmm_tyre_age.png")
+print("  - bahrain_2023_gaussian_hmm_lap_delta.png")

@@ -2,7 +2,7 @@ from pgmpy.models import DiscreteBayesianNetwork
 import pandas as pd
 from pgmpy.estimators import MaximumLikelihoodEstimator, BayesianEstimator
 
-df = pd.read_csv("bahrain_2023_lap_dataset.csv")
+df = pd.read_csv("bahrain_2023_laps_binned.csv")
 
 # assuring data types
 for col in ['TyreAgeBucket','Compound','LapDeltaCategory','TrackTemp','Weather','RacePhase']:

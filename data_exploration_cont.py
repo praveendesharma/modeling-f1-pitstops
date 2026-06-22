@@ -138,7 +138,7 @@ races = [
     (2023, 'Las Vegas', 'R'),
     (2023, 'Abu Dhabi', 'R'),
 ]
-output_filename = 'all_race_data_cont.csv'
+output_filename = 'laps_continuous_2019_2023.csv'
 i=0
 all_laps = pd.DataFrame()
 for year, gp, session_id in tqdm(races, desc="Processing races"):

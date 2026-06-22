@@ -5,7 +5,7 @@ from tqdm import tqdm
 # Set up cache
 os.makedirs('cache', exist_ok=True)
 fastf1.Cache.enable_cache('cache')
-output_filename = 'all_race_data_binned.csv'
+output_filename = 'laps_binned_2019_2023.csv'
 
 races = [
 

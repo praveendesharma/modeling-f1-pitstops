@@ -18,7 +18,7 @@ def build_observation_string(row):
 
 
 # --- 1. LOAD DATA ---
-df = pd.read_csv('all_race_data_binned.csv')
+df = pd.read_csv('laps_binned_2019_2023.csv')
 df = df.sort_values(['Driver', 'LapNumber']).reset_index(drop=True)
 
 # --- 2. PREPARE DISCRETE FEATURES ---
@@ -219,5 +219,5 @@ plt.show()
 
 
 # 3. Save Results
-df.to_csv('bahrain_2023_discrete_predictions.csv', index=False)
-print("\nPredictions saved to 'bahrain_2023_discrete_predictions.csv'")
+df.to_csv('bahrain_2023_discrete_hmm_predictions.csv', index=False)
+print("\nPredictions saved to 'bahrain_2023_discrete_hmm_predictions.csv'")
